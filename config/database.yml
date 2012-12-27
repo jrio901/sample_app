@@ -13,9 +13,9 @@ development:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: db/development_postgresql
+  database: postgres_development
   pool: 5
-  username:
+  username: admin
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -29,10 +29,10 @@ development:
 test:
   host: localhost
   adapter: postgresql
-  database: db/test_postgresql
+  database: postgres_test
   pool: 5
   timeout: 5000
-  username:
+  username: admin
   password:
 
 #production:
@@ -43,8 +43,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: db/production_postgresql
+  database: postgres_production
   pool: 5
   timeout: 5000
-  username:
+  username: admin
   password:
